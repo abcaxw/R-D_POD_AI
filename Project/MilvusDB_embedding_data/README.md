@@ -1,4 +1,4 @@
-# Tài liệu bàn giao dự án Module AI Product Labeling System
+# Module AI Product Labeling System
 
 ## 1. Tổng quan dự án
 
