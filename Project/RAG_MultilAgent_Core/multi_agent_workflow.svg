@@ -1,0 +1,171 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="routeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#1e293b">
+    RAG Multi-Agent Workflow Structure
+  </text>
+
+  <!-- START -->
+  <circle cx="100" cy="100" r="30" fill="#22c55e" filter="url(#shadow)"/>
+  <text x="100" y="107" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">START</text>
+
+  <!-- Query Classifier Agent -->
+  <rect x="200" y="70" width="140" height="60" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="270" y="95" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">Query Classifier</text>
+  <text x="270" y="110" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Agent</text>
+
+  <!-- Decision Diamond -->
+  <polygon points="450,70 500,100 450,130 400,100" fill="url(#routeGrad)" filter="url(#shadow)"/>
+  <text x="450" y="107" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Route</text>
+
+  <!-- Smart Product Search Agent -->
+  <rect x="550" y="40" width="140" height="60" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="620" y="65" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">Smart Product</text>
+  <text x="620" y="80" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Search Agent</text>
+
+  <!-- Enhanced Search Agent -->
+  <rect x="550" y="140" width="140" height="60" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="620" y="165" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">Enhanced</text>
+  <text x="620" y="180" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Search Agent</text>
+
+  <!-- Analysis Decision Diamond -->
+  <polygon points="750,140 800,170 750,200 700,170" fill="url(#routeGrad)" filter="url(#shadow)"/>
+  <text x="750" y="177" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Analysis</text>
+
+  <!-- Analysis Agents -->
+  <!-- Benchmark Agent -->
+  <rect x="850" y="240" width="120" height="50" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="910" y="262" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Benchmark</text>
+  <text x="910" y="275" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Agent</text>
+
+  <!-- Market Gap Agent -->
+  <rect x="850" y="310" width="120" height="50" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="910" y="332" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Market Gap</text>
+  <text x="910" y="345" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Agent</text>
+
+  <!-- Verify Idea Agent -->
+  <rect x="850" y="380" width="120" height="50" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="910" y="402" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Verify Idea</text>
+  <text x="910" y="415" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Agent</text>
+
+  <!-- Audience Volume Agent -->
+  <rect x="850" y="450" width="120" height="50" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="910" y="472" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Audience Volume</text>
+  <text x="910" y="485" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Agent</text>
+
+  <!-- Response Generator Agent -->
+  <rect x="700" y="550" width="140" height="60" rx="8" fill="url(#agentGrad)" filter="url(#shadow)"/>
+  <text x="770" y="575" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">Response Generator</text>
+  <text x="770" y="590" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Agent</text>
+
+  <!-- END -->
+  <circle cx="770" cy="680" r="30" fill="#ef4444" filter="url(#shadow)"/>
+  <text x="770" y="687" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">END</text>
+
+  <!-- Milvus Database -->
+  <rect x="50" y="300" width="120" height="80" rx="8" fill="url(#dbGrad)" filter="url(#shadow)"/>
+  <text x="110" y="330" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">Milvus</text>
+  <text x="110" y="345" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Vector</text>
+  <text x="110" y="360" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Database</text>
+
+  <!-- Flow Arrows -->
+  <!-- START to Classifier -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto" fill="#374151">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Flow lines -->
+  <line x1="130" y1="100" x2="200" y2="100" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="100" x2="400" y2="100" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Smart search path -->
+  <line x1="480" y1="85" x2="550" y2="70" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="515" y="75" font-family="Arial" font-size="9" fill="#374151">smart_search</text>
+  
+  <!-- Traditional search path -->
+  <line x1="480" y1="115" x2="550" y2="170" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="515" y="145" font-family="Arial" font-size="9" fill="#374151">other</text>
+
+  <!-- From enhanced search to analysis router -->
+  <line x1="690" y1="170" x2="700" y2="170" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Analysis routing -->
+  <line x1="800" y1="170" x2="850" y2="265" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="170" x2="850" y2="335" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="170" x2="850" y2="405" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="170" x2="850" y2="475" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Smart search direct to response -->
+  <line x1="620" y1="100" x2="620" y2="520" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="620" y1="520" x2="700" y2="580" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="570" y="300" font-family="Arial" font-size="9" fill="#22c55e" transform="rotate(-90 570 300)">Direct Path</text>
+
+  <!-- Analysis to response -->
+  <line x1="850" y1="265" x2="770" y2="550" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="850" y1="335" x2="770" y2="550" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="850" y1="405" x2="770" y2="550" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="850" y1="475" x2="770" y2="550" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Response to END -->
+  <line x1="770" y1="610" x2="770" y2="650" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Database connections -->
+  <line x1="170" y1="340" x2="550" y2="170" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="340" x2="620" y2="70" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="340" x2="850" y2="265" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="340" x2="850" y2="335" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="340" x2="850" y2="405" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="170" y1="340" x2="850" y2="475" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <!-- Legend -->
+  <rect x="50" y="450" width="200" height="120" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="5" filter="url(#shadow)"/>
+  <text x="60" y="470" font-family="Arial" font-size="12" font-weight="bold" fill="#1e293b">Chú thích:</text>
+  
+  <line x1="60" y1="485" x2="80" y2="485" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="85" y="490" font-family="Arial" font-size="10" fill="#374151">Luồng xử lý chính</text>
+  
+  <line x1="60" y1="505" x2="80" y2="505" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="85" y="510" font-family="Arial" font-size="10" fill="#22c55e">Smart search (trực tiếp)</text>
+  
+  <line x1="60" y1="525" x2="80" y2="525" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="85" y="530" font-family="Arial" font-size="10" fill="#059669">Kết nối cơ sở dữ liệu</text>
+
+  <rect x="60" y="540" width="15" height="15" fill="url(#agentGrad)"/>
+  <text x="80" y="552" font-family="Arial" font-size="10" fill="#374151">Agent</text>
+
+  <polygon points="60,560 70,565 60,570 50,565" fill="url(#routeGrad)"/>
+  <text x="80" y="567" font-family="Arial" font-size="10" fill="#374151">Điểm phân luồng</text>
+
+  <!-- Query Types -->
+  <rect x="300" y="450" width="250" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="5" filter="url(#shadow)"/>
+  <text x="310" y="470" font-family="Arial" font-size="12" font-weight="bold" fill="#1e293b">Các loại phân tích:</text>
+  
+  <text x="320" y="490" font-family="Arial" font-size="10" fill="#374151">• benchmark - So sánh sản phẩm</text>
+  <text x="320" y="510" font-family="Arial" font-size="10" fill="#374151">• market_gap - Phân tích khoảng trống thị trường</text>
+  <text x="320" y="530" font-family="Arial" font-size="10" fill="#374151">• verify_idea - Xác thực ý tưởng</text>
+  <text x="320" y="550" font-family="Arial" font-size="10" fill="#374151">• audience_volume - Phân tích khối lượng khách hàng</text>
+  <text x="320" y="570" font-family="Arial" font-size="10" fill="#374151">• smart_search - Tìm kiếm thông minh</text>
+</svg>
