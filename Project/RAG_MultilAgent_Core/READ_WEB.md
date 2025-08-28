@@ -1,4 +1,4 @@
-# Tài liệu bàn giao dự án Milvus Product Analytics Dashboard
+# Product Analytics Dashboard
 
 ## 1. Tổng quan dự án
 
