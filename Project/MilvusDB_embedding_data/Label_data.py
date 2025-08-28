@@ -1118,7 +1118,7 @@ def main():
     }
 
     # API Keys
-    google_api_key = "AIzaSyC0-LkawNpB_krGzPmR6fe7zpFyk476LGY"
+    google_api_key = ""
 
     # Ollama config
     ollama_model = "llava:7b"  # Có thể thay đổi thành llava:13b, bakllava, etc.
