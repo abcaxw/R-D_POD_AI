@@ -1,4 +1,4 @@
-# TÀI LIỆU BÀN GIAO DỰ ÁN
+# TÀI LIỆU DỰ ÁN
 ## RAG Multi-Agent Workflow for Enhanced RnD Assistant
 
 ## 🏗️ KIẾN TRÚC TỔNG QUAN
